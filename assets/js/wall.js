@@ -19,11 +19,6 @@ floatingButton.addEventListener("click", () => {
 
 //Post Icons
 
-window.onload = () => {
-   
-}
-
-
 //New post icons
 const addPost = document.getElementById("add-post-icon");
 
@@ -39,6 +34,8 @@ addPost.addEventListener("mouseleave" , () => {
 $(document).ready(function () {
    $(".comment-container").draggable();
  });
+
+ 
  const commentIcon = document.getElementsByClassName("comment-icon");
  const commentBox = document.getElementsByClassName("comment-container");
  const iconHand = document.getElementsByClassName("icon-hand");
