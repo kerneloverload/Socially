@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Yellowtail&display=swap");
 body {
   margin: 0px;
-  font-family: "M PLUS 1", sans-serif;
+  font-family: "Architects Daughter", cursive;
 }
 
 .main {
@@ -53,7 +53,7 @@ body {
   padding: 15px 0;
   display: block;
   font-size: 18px;
-  font-family: "M PLUS 1", sans-serif;
+  font-family: "Architects Daughter", cursive;
   font-weight: 700;
   width: 80%;
   transition: 0.1s ease-in;
@@ -82,7 +82,7 @@ body {
   margin-left: 100px;
   font-size: 18px;
   width: 50%;
-  font-family: "M PLUS 1", sans-serif;
+  font-family: "Architects Daughter", cursive;
   font-weight: 700;
 }
 .main .form .form-signup select option {
@@ -99,7 +99,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "M PLUS 1", sans-serif;
+  font-family: "Architects Daughter", cursive;
   font-weight: 700;
   font-size: small;
   color: #000;
@@ -121,7 +121,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "M PLUS 1", sans-serif;
+  font-family: "Architects Daughter", cursive;
   font-weight: 700;
   font-size: small;
   color: #000;

@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Yellowtail&display=swap");
 body {
   margin: 0px;
-  font-family: "M PLUS 1", sans-serif;
+  font-family: "Architects Daughter", cursive;
 }
 
 .main {
@@ -55,7 +55,7 @@ body {
   display: block;
   font-size: 18px;
   font-weight: 700;
-  font-family: "M PLUS 1", sans-serif;
+  font-family: "Architects Daughter", cursive;
   width: 80%;
   transition: 0.1s ease-in;
 }
@@ -86,7 +86,7 @@ body {
   margin-right: 50px;
 }
 .main .form .btns .signin-btn {
-  font-family: "M PLUS 1", sans-serif;
+  font-family: "Architects Daughter", cursive;
   font-weight: 700;
   border: 2px solid aqua;
   width: 50%;
@@ -104,7 +104,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "M PLUS 1", sans-serif;
+  font-family: "Architects Daughter", cursive;
   font-weight: 700;
   font-size: small;
   color: #000;
