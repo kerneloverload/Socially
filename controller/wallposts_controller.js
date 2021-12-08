@@ -5,8 +5,13 @@ module.exports.view = (req, res) => {
         PostModel.find({},).sort({createdAt: -1})
         .populate({
             path: "comment",
+            options: {
+                sort: {
+                    createdAt: -1
+                },
+            },
             populate: {
-                path: "user",
+                path: "user"
             },
         })
         .populate("user").exec((err, posts)=>{
