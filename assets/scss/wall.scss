@@ -130,30 +130,81 @@
                 .comment-details{
                     display: flex;
                     flex-direction: $column;
+                    // border: 1px solid black;
+                    height: auto;
+                    width: auto;
+                    background: linear-gradient(20deg, lightgrey, rgb(135,201,240));
                     .comment-user-details{
                         display: flex;
                         flex-direction: $row;
+                        .delete-comment{
+                            position: absolute;
+                            height: 30px;
+                            width: 30px;
+                            margin-left: 49.5vw;
+                            margin-top: 5px;
+                            &:hover{
+                                i{
+                                    transition: all ease-in-out 0.5s;
+                                    color: red;
+                                    cursor: default;
+                                }
+                            }
+                            i{
+                                font-size: 25px;
+                                color: 	brown;
+                            }
+                        }
                         .comment-avatar{
-                            height: 100px;
-                            width: 100px;
+                            height: 70px;
+                            width: 70px;
                             img{
                                 border-radius: 50%;
                                 height: 100%;
                                 width: 100%;
                             }
                         }
-                        .comment-post{
-                            border: 1px solid black;
-                        }
-                        .comment-name{
-                            border: 1px solid black;
+                        .comment-details-container{
+                            display: flex;
+                            flex-direction: $column;
+                            margin-left: 10px;
+                            width: auto;
+                            .comment-name{
+                                // border: 1px solid black;
+                                height: 25px;
+                                width: auto;
+                                p
+                                {   
+                                    margin-top: 1px;
+                                    font-family: $fontMplus;
+                                    font-weight: 700;
+                                }
+                            }
+                            .comment-post{
+                                height: auto;
+                                width: auto;
+                                margin-left: 5px;
+                                // border: 1px solid black;
+                                p
+                                {   
+                                    margin-top: 0px;
+                                    font-family: $fontMplus;
+                                    font-weight: 500;
+                                }
+                            }
+                            .comment-options{
+                                // border: 1px solid black;
+                                margin-left: 35vw;
+                                i{
+                                    font-size: 30px;
+                                }
+                            }
                         }
                     }
                     
                     margin-top: 100px;
                 }
                 .comment{
-                       
                     margin-top: 370px;
                     margin-left: 40px;
                     margin-bottom: 50px;
@@ -170,7 +221,6 @@
                         width: inherit;
                         margin-top: 10px;
                          border: 1px solid black;
-                         border-radius: 20px;
                         //  background-color: aqua;
                         form{
                             height: 100%;
@@ -199,7 +249,7 @@
                         .comment-custom{
                             display: flex;
                             border-radius: 0px 0px 20px 20px;
-                            border: 1px solid black;
+                            // border: 1px solid black;
                             height: 50px;
                             width: inherit;
                             background-color: rgb(238, 225, 250);

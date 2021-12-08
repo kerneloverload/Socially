@@ -33,13 +33,14 @@
                 <div class="new-post-container" id="new-post-container" style="display: none;" >
                     <form action="/create/post" method="post">
                         <div class="new-post">
-                            <textarea name="post" id="" cols="30" rows="3" maxlength="300"
+                            <textarea name="post" id="post-textbox" cols="30" rows="3" maxlength="300"
                                 placeholder="What's next...."></textarea>
                         </div>
                         <br>
                         <div class="post-custom">
                             <div class="new-post-icons">
-                                <i class="far fa-smile-beam"></i>
+                                <i class="far fa-smile-beam" id="smiley-post"></i>
+                                
                                 <i class="material-icons">format_size</i>
                                 <i class="material-icons">format_italic</i>
                                 <i class="material-icons">format_color_text</i>
@@ -48,14 +49,18 @@
                                 <button type="submit"><span id="add-post-icon"
                                         class="material-icons">post_add</span></button>
                     </form>
+                    
                 </div>
+                
             </div>
+            <emoji-picker style="display: none; position: absolute; z-index: 1;" id="emoji-picker"></emoji-picker>
         </div>
             <div class="float">
                 <button class="floating-btn" id="floating-btn"><i id="floating-btn-icon"
                         class="fas fa-plus-circle"></i></button>
             </div>
         <div class="main-post-container">
+            
             <%for(let posts of post){%>
                 <div class="posts-main">
                     <div class="posts-container">
@@ -85,17 +90,17 @@
                             <span>count</span>
                         </div>
                             <div class="comment">
-                                <div class="comment-container">
+                                <div class="comment-container" style="display: none;">
                                     <form action="/create/comment" method="post">
                                         <div class="new-comment">
-                                            <textarea name="comment" id="" cols="30" rows="3"
+                                            <textarea name="comment" class="comment-textbox" cols="30" rows="3"
                                                 placeholder="Type your comment...." required></textarea>
                                             <input type="text" name="post" hidden value="<%=posts._id%>">
                                         </div>
                                         <br>
                                         <div class="comment-custom" style="cursor: move;">
                                             <div class="comment-icons">
-                                                <i class="far fa-smile-beam" style="cursor:pointer;"></i>
+                                                <i class="far fa-smile-beam smiley-comment" style="cursor:pointer;"></i>
                                                 <i class="material-icons" style="cursor:pointer;">format_size</i>
                                                 <i class="material-icons" style="cursor:pointer;">format_italic</i>
                                                 <i class="material-icons" style="cursor:pointer;">format_color_text</i>
@@ -104,26 +109,41 @@
                                                 <button type="submit" style="cursor:pointer;"><span id="add-post-icon"
                                                         class="material-icons">send</span></button>
                                     </form>
-                                    
                                 </div>
                             </div>
                         </div>
+                        <emoji-picker style="display: none; position: absolute; z-index: 1; margin-top: 30px;" class="emoji-picker-comment"></emoji-picker>
+                        <div class="comment-inside-container"  style="display: none;">
                         <% for(let comments of posts.comment){%>
                             <div class="comment-details">
                                 <div class="comment-user-details">
+                                    <div class="delete-comment">
+                                        <a href="#">
+                                            <i id="post-del" class="far fa-times-circle"></i>
+                                        </a>
+                                    </div>
                                     <div class="comment-avatar">
                                         <img src="/avatar/test.jpg" alt="post_avatar.jpg">
                                     </div>
-                                    <div class="comment-post">
-                                        <p><%=comments.user.firstname%> <%=comments.user.lastname%></p>
-                                    </div>
-                                    <div class="comment-name">
-                                        <p><%=comments.comment%></p>
+                                    <div class="comment-details-container">
+                                        
+                                        <div class="comment-name">
+                                            <p><%=comments.user.firstname%> <%=comments.user.lastname%></p>
+                                        </div>
+                                        <div class="comment-post">
+                                            <p><%=comments.comment%></p>
+                                        </div>
+                                        <div class="comment-options">
+                                            <i class="far fa-hand-spock icon-hand"></i>
+                                                <span>count</span>
+                                            <i class="far fa-comment comment-inside-icon"></i>
+                                                <span>count</span>
+                                        </div>
                                     </div>
                                 </div>
-                                
                             </div>
                             <%}%>
+                        </div>
                         </div>
                         <%if(locals.user && locals.user.id == posts.user.id){%>
                         <div class="delete-post">
@@ -146,12 +166,15 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
 <script src="/js/wall.js"></script>
+<script src="/js/vanila_emoji/emojiPicker.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
 <script>
     const head = document.getElementById("head");
     const foot = document.getElementById("footer");
     (function headFoot() {
         foot.classList.add("footer");
         head.classList.add("header");
+        new EmojiPicker();
         return headFoot;
     }());
 </script>
