@@ -1,184 +1,157 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Yellowtail&display=swap");
 body {
   margin: 0px;
-  padding: 0px;
-}
+  padding: 0px; }
 
-.main {
-  /*@include flex-center($column);*/
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: auto;
   min-width: 40vw;
   display: flex;
   flex-direction: column;
   border: 4px solid black;
-  margin-top: 4rem;
-  margin-bottom: 0rem;
-  background: radial-gradient(circle, #bb95a6 0%, #94bbe9 100%);
-  /*background: linear-gradient(50deg, lightgrey, rgb(135,201,240));*/
-  /* @media (min-width: 49vw) {
-       .photos{
-           height: 80vh;
-       }
-   }*/
-}
-.main .left-panel {
-  position: absolute;
-  width: 250px;
-  height: 100%;
-  margin-top: 0rem;
-  /*margin-right: 88.5vw;*/
-  background-color: aqua;
-  opacity: 80%;
-}
-.main .left-panel .panel-options {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 100px;
-  height: 100px;
-  width: inherit;
-  background-color: aquamarine;
-  font-size: 20px;
-}
-.main .left-panel .panel-options a {
-  text-decoration: none;
-}
-.main .left-panel .panel-options span {
-  margin-left: 120px;
-  font-family: monospace;
-}
-.main .left-panel .panel-options .post-tag {
-  text-align: center;
-  width: inherit;
-  margin: 5px;
-  font-weight: 900;
-}
-.main .left-panel .panel-options .post-tag span {
-  margin-left: 130px;
-}
-.main .left-panel .panel-options .post-tag:hover {
-  background-color: lightskyblue;
-}
-.main .left-panel .panel-options .post-tag:active::after {
-  content: ">";
-}
-.main .left-panel .panel-options .photo-tag {
-  text-align: center;
-  width: inherit;
-  margin: 5px;
-  font-weight: 900;
-}
-.main .left-panel .panel-options .photo-tag:hover {
-  background-color: lightskyblue;
-}
-.main .left-panel .panel-options .photo-tag:active::after {
-  content: ">";
-}
-.main .left-panel .panel-options .video-tag {
-  text-align: center;
-  width: inherit;
-  margin: 5px;
-  font-weight: 900;
-}
-.main .left-panel .panel-options .video-tag:hover {
-  background-color: lightskyblue;
-}
-.main .left-panel .panel-options .video-tag:active::after {
-  content: ">";
-}
-.main .photo_posts {
-  position: relative;
-  height: auto;
-  width: 60vw;
-  border: 2px solid black;
-  margin: 0vw 90vw 3vw 21.5vw;
-}
-.main .photo_posts .photos {
-  height: auto;
-  width: 58vw;
-  border: 2px solid black;
-  border-radius: 1.2rem;
-  box-shadow: 10px 10px 10px 10px slategray;
-  margin-top: 2vw;
-  background-image: none;
-}
-.main .photo_posts .photos .share {
-  margin: 0.8vw 0vw 0vw 0.465vw;
-  min-height: 2.3vw;
-  width: 56.9vw;
-  font-size: 2vw;
-  /*border: 1px solid gray;*/
-}
-.main .photo_posts .photos .share .fa-long-arrow-alt-left {
-  float: left;
-  margin-left: 0.3vw;
-  margin-top: 0rem;
-}
-.main .photo_posts .photos .share .fa-share-square {
-  margin: 0.1rem 0.2rem;
-  float: right;
-}
-.main .photo_posts .photos .image {
-  height: 68vh;
-  width: 57vw;
-  margin: 0.3vw 0.46vw 0vw 0.46vw;
-  border-radius: 1.1rem;
-}
-.main .photo_posts .photos .image img {
-  height: 100%;
-  width: 100%;
-  border-radius: inherit;
-}
-.main .photo_posts .photos .commentSection {
-  margin: 0.5vw 0vw 1vw 0.465vw;
-  width: 56.9vw;
-  height: 6vw;
-  /*border: 1px solid red;*/
-}
-.main .photo_posts .photos .commentSection .likemojis {
-  color: #b4175d;
-  font-size: 2.3vw;
-}
-.main .photo_posts .photos .commentSection .likemojis .fa-heart {
-  float: left;
-  margin-top: 1.4rem;
-  margin-left: 0.5rem;
-}
-.main .photo_posts .photos .commentSection .likemojis .fa-heart:hover {
-  color: rgba(255, 0, 0, 0.493);
-}
-.main .photo_posts .photos .commentSection .likemojis .fa-heart-broken {
-  float: right;
-  margin-top: 1.4rem;
-  margin-right: 0.5rem;
-}
-.main .photo_posts .photos .commentSection .likemojis .fa-heart-broken:hover {
-  color: rgba(255, 0, 0, 0.575);
-}
-.main .photo_posts .photos .commentSection .dropdown {
-  margin: 1rem 4rem 1rem 10rem;
-  position: relative;
-  display: inline-block;
-}
-.main .photo_posts .photos .commentSection .dropbtn {
-  font-size: 2.3vw;
-  border: none;
-  outline: none;
-  background-color: inherit;
-}
-.main .photo_posts .photos .commentSection .dropdown-content {
-  display: flex;
-  position: absolute;
-  min-width: 200px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-.main .photo_posts .photos .commentSection .dropdown-content i {
-  padding: 1rem;
-  position: relative;
-  display: inline-block;
-  font-size: 2.3vw;
-}
+  top: 0;
+  bottom: 0;
+  background: radial-gradient(circle, #bb95a6 0%, #94bbe9 100%); }
+  main .left-panel {
+    position: absolute;
+    width: 240px;
+    height: 150%;
+    margin-top: 3.8rem;
+    margin-left: -60rem;
+    background-color: aqua;
+    opacity: 60%; }
+    main .left-panel .panel-options {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 100px;
+      height: 100px;
+      width: inherit;
+      background-color: aquamarine;
+      font-size: 20px; }
+      main .left-panel .panel-options a {
+        text-decoration: none; }
+      main .left-panel .panel-options span {
+        margin-left: 120px;
+        font-family: monospace; }
+      main .left-panel .panel-options .post-tag {
+        text-align: center;
+        width: inherit;
+        margin: 5px;
+        font-weight: 900; }
+        main .left-panel .panel-options .post-tag span {
+          margin-left: 130px; }
+        main .left-panel .panel-options .post-tag:hover {
+          background-color: lightskyblue; }
+        main .left-panel .panel-options .post-tag:active::after {
+          content: ">"; }
+      main .left-panel .panel-options .photo-tag {
+        text-align: center;
+        width: inherit;
+        margin: 5px;
+        font-weight: 900; }
+        main .left-panel .panel-options .photo-tag:hover {
+          background-color: lightskyblue; }
+        main .left-panel .panel-options .photo-tag:active::after {
+          content: ">"; }
+      main .left-panel .panel-options .video-tag {
+        text-align: center;
+        width: inherit;
+        margin: 5px;
+        font-weight: 900; }
+        main .left-panel .panel-options .video-tag:hover {
+          background-color: lightskyblue; }
+        main .left-panel .panel-options .video-tag:active::after {
+          content: ">"; }
+  main picture {
+    position: relative;
+    height: auto;
+    width: 58.5vw;
+    border: 2px solid black;
+    padding: 1rem;
+    margin: 3.8rem 2rem 3rem 0rem; }
+    main picture .photos {
+      height: auto;
+      width: 58vw;
+      border: 2px solid black;
+      border-radius: 1.2rem;
+      box-shadow: 6px 6px 6px 6px slategray;
+      margin-top: 1.5vw;
+      margin-bottom: 2vw;
+      background-image: none; }
+      main picture .photos .share {
+        margin: 0.8vw 0vw 0vw 0.465vw;
+        min-height: 2.3vw;
+        width: 56.9vw;
+        font-size: 2vw;
+        /*border: 1px solid gray;*/ }
+        main picture .photos .share #return {
+          border: none;
+          float: left;
+          margin-left: 0.3vw;
+          margin-top: 0rem;
+          font-size: 2vw; }
+        main picture .photos .share #shareto {
+          border: none;
+          margin: 0.1rem 0.2rem;
+          float: right;
+          font-size: 2vw; }
+      main picture .photos .image {
+        height: 68vh;
+        width: 57vw;
+        margin: 0.3vw 0.46vw 0vw 0.46vw;
+        border-radius: 1.1rem; }
+        main picture .photos .image img {
+          height: 100%;
+          width: 100%;
+          border-radius: inherit; }
+      main picture .photos .commentSection {
+        margin: 0.5vw 0vw 1vw 0.465vw;
+        width: 56.9vw;
+        height: 6vw;
+        /*border: 1px solid red;*/ }
+        main picture .photos .commentSection .likemojis {
+          color: #b4175d;
+          font-size: 2.3vw; }
+          main picture .photos .commentSection .likemojis .fa-heart {
+            float: left;
+            margin-top: 1.4rem;
+            margin-left: 0.5rem; }
+            main picture .photos .commentSection .likemojis .fa-heart:hover {
+              color: rgba(255, 0, 0, 0.493); }
+          main picture .photos .commentSection .likemojis .fa-heart-broken {
+            float: right;
+            margin-top: 1.4rem;
+            margin-right: 0.5rem; }
+            main picture .photos .commentSection .likemojis .fa-heart-broken:hover {
+              color: rgba(255, 0, 0, 0.575); }
+        main picture .photos .commentSection .dropdown {
+          margin: 1.5rem 4rem 1rem 10rem;
+          position: relative;
+          display: inline-block; }
+        main picture .photos .commentSection .dropbtn {
+          font-size: 2.3vw;
+          border: none;
+          outline: none;
+          color: rgba(227, 241, 25, 0.575);
+          background-color: inherit; }
+        main picture .photos .commentSection #dropdown-content {
+          display: none;
+          position: absolute;
+          clear: both;
+          height: 0;
+          width: 110vw;
+          box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+          z-index: 1; }
+          main picture .photos .commentSection #dropdown-content i {
+            padding: 1rem;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            font-size: 2.3vw; }
 
 /*# sourceMappingURL=photos.css.map */

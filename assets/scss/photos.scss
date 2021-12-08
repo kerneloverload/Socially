@@ -5,31 +5,25 @@ body{
     padding: 0px;
 }
 
-.main{
-    /*@include flex-center($column);*/
+main{
+    @include flex-center($column);
     height: auto;
     min-width: 40vw;
     display: flex;
     flex-direction: column;
     border: 4px solid black;
-    margin-top: 4rem;
-    margin-bottom: 0rem;
-    
+    top: 0;
+    bottom: 0;
     background: radial-gradient(circle, rgba(187,149,166,1) 0%, rgba(148,187,233,1) 100%);
-    /*background: linear-gradient(50deg, lightgrey, rgb(135,201,240));*/
-   /* @media (min-width: 49vw) {
-        .photos{
-            height: 80vh;
-        }
-    }*/
+   
     .left-panel{
         position: absolute;
-        width: 250px;
-        height: 100%;
-        margin-top: 0rem;
-        /*margin-right: 88.5vw;*/
+        width: 240px;
+        height: 150%;
+        margin-top: 3.8rem;
+        margin-left: -60rem;
         background-color: aqua;
-        opacity: 80%;
+        opacity: 60%;
         .panel-options{
             @include flex-center($column);
             flex-direction: $column;
@@ -87,19 +81,21 @@ body{
             }
         }
     }
-    .photo_posts{
+    picture{
         position: relative;
         height: auto;
-        width: 60vw;
+        width: 58.5vw;
         border: 2px solid rgb(0, 0, 0);
-        margin: 0vw 90vw 3vw 21.5vw;
+        padding: 1rem;
+        margin: 3.8rem 2rem 3rem 0rem;
         .photos{
             height: auto;
             width: 58vw;
             border: 2px solid black;
             border-radius: 1.2rem;
-            box-shadow: 10px 10px 10px 10px slategray;
-            margin-top: 2vw;
+            box-shadow: 6px 6px 6px 6px slategray;
+            margin-top: 1.5vw;
+            margin-bottom: 2vw;
             background-image: none;
             .share{
                 margin: 0.8vw 0vw 0vw 0.465vw;
@@ -107,14 +103,18 @@ body{
                 width: 56.9vw;
                 font-size: 2vw;
                 /*border: 1px solid gray;*/
-                .fa-long-arrow-alt-left{
+                #return{
+                    border: none;
                     float: left;
                     margin-left: 0.3vw;
                     margin-top: 0rem;
+                    font-size: 2vw;
                 }
-                .fa-share-square{
+                #shareto{
+                    border: none;
                     margin: 0.1rem 0.2rem;
                     float: right;
+                    font-size: 2vw;
                 }
             }
             .image{
@@ -134,16 +134,16 @@ body{
                 height: 6vw;
                 /*border: 1px solid red;*/
                 .likemojis{
-                    color: rgb(180,23,93);;
+                    color: rgb(180,23,93);
                     font-size: 2.3vw; 
-                        .fa-heart{
-                            float: left;
-                            margin-top: 1.4rem;
-                            margin-left: 0.5rem;
-                            &:hover{
-                                color:rgba(255, 0, 0, 0.493);
-                            }
+                    .fa-heart{
+                        float: left;
+                        margin-top: 1.4rem;
+                        margin-left: 0.5rem;
+                        &:hover{
+                            color:rgba(255, 0, 0, 0.493);
                         }
+                    }
                     .fa-heart-broken{
                         float: right;
                         margin-top: 1.4rem;
@@ -154,7 +154,7 @@ body{
                     }
                 }
                 .dropdown{
-                    margin: 1rem 4rem 1rem 10rem;
+                    margin: 1.5rem 4rem 1rem 10rem;
                     position: relative;
                     display: inline-block;
                 }
@@ -162,18 +162,22 @@ body{
                     font-size: 2.3vw;
                     border: none;
                     outline: none;
+                    color: rgba(227, 241, 25, 0.575);
                     background-color: inherit;
                 }
-                .dropdown-content{
-                    display: flex;
+                #dropdown-content{
+                    display: none;
                     position: absolute;
-                    min-width: 200px;
+                    clear: both;
+                    height: 0;
+                    width: 110vw;
                     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
                     z-index: 1;
                     i{
                     padding: 1rem;
                     position: relative;
-                    display: inline-block;
+                    display: flex;
+                    flex-direction: row;
                     font-size: 2.3vw;
                     }
                 }

@@ -14,7 +14,7 @@
     </header>
 </head>
 <body>
-    <div class="main">
+    <main>
         <div class="panel">
             <section class="left-panel">
                 <div class="panel-options">
@@ -33,11 +33,11 @@
                 </div>
             </section>
         </div>
-        <div class="photo_posts">
+        <picture>
             <div class="photos">
                 <div class="share">
-                    <i class="fas fa-long-arrow-alt-left"></i>
-                    <i class="fas fa-share-square"></i>
+                    <a id="return" href="#"><i class="fas fa-long-arrow-alt-left"></i></a>
+                    <a id="shareto" href="#"><i class="fas fa-share-square"></i></a>
                 </div>
                 <div class="image">
                     <img src="/images/biryani.jpg" alt="">
@@ -49,7 +49,7 @@
                     </div>
                     <div class="dropdown">
                         <button class="dropbtn"><i class="far fa-grin-hearts"></i></button>
-                        <div class="dropdown-content">
+                        <div id="dropdown-content">
                             <i class="far fa-kiss-wink-heart"></i>
                             <i class="fas fa-fire"></i>
                             <i class="fas fa-virus"></i>
@@ -58,6 +58,11 @@
                             <i class="fas fa-grin-squint-tears"></i>
                         </div>
                     </div>
+                    <!--<div class="comment">
+                        <i class="far fa-comment-dots">
+                            <textarea name="comments" id="photo_comment" cols="30" rows="10">Comment as ...</textarea>
+                        </i>
+                    </div>-->
                 </div>
             </div>
             <div class="photos">
@@ -74,23 +79,23 @@
                         <i class="fas fa-heart-broken"></i>
                     </div>
                     <div class="dropdown">
-                        <!--<button class="dropbtn"><i class="far fa-grin-hearts"></i></button>
-                        <div class="dropdown-content">
+                        <button class="dropbtn"><i class="far fa-grin-hearts"></i></button>
+                        <div id="dropdown-content">
                             <i class="far fa-kiss-wink-heart"></i>
                             <i class="fas fa-fire"></i>
                             <i class="fas fa-virus"></i>
                             <i class="fas fa-sad-tear"></i>
                             <i class="fas fa-sad-tear"></i>
                             <i class="fas fa-grin-squint-tears"></i>
-                        </div>-->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
-    </div>
+        </picture>
+    </main>
     <%-include("../footer.ejs")%>
 </body>
+<script src="/js/photo_posts.js"></script>
 <script>
     const head = document.getElementById("head");
     const foot = document.getElementById("footer");
@@ -99,25 +104,5 @@
     head.classList.add("header");  
     return headFoot;  
     }());
-    $(document).ready(function () {
-            $(".fa-heart").click(function () {
-                $(".fa-heart").css({
-                    color: "black"
-                });
-            });
-            $(".fa-heart-broken").click(function () {
-                $(".fa-heart-broken").css({
-                   color: "white" 
-                });
-            });
-            if (condition) {
-                
-            } else {
-                
-            }
-            $(".dropbtn").click(function () {
-                $(".dropdown-content").fadeToggle(slow);
-            });
-        });
 </script>
 </html>
