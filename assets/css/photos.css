@@ -70,7 +70,7 @@ main {
     height: auto;
     width: 30em;
     margin: 10vw;
-    border: 2px solid #f01cf042; }
+    /*border: 2px solid #f01cf042;*/ }
     main picture ul {
       position: relative;
       transform: rotate(-35deg) skew(20deg, 5deg); }
