@@ -12,7 +12,6 @@ app.use(express.static("assets"));
 app.use(express.urlencoded());
 app.use(cookie());
 
-
 app.set("view engine", "ejs");
 app.set("views", "./views");
 

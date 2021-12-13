@@ -57,15 +57,6 @@ addPost.addEventListener("mouseleave" , () => {
 });
 
 //comments container
- 
-
-
-
-
-
-
-
- 
  const commentIcon = document.getElementsByClassName("comment-icon");
  const commentBox = document.getElementsByClassName("comment-container");
  const commentDetails = document.getElementsByClassName("comment-inside-container");
@@ -118,11 +109,8 @@ addPost.addEventListener("mouseleave" , () => {
      });
  }
  
- document.getElementById('emoji-picker-comment')
+ document.getElementById('emoji-picker-comment');
    
-
-
-
    for(let i=0; i<iconHand.length; i++){
       iconHand[i].addEventListener("click", () => {
          handIcon = !handIcon;
@@ -143,6 +131,8 @@ addPost.addEventListener("mouseleave" , () => {
       });
    }
  }
+
+ //Font Picker
  
 
 

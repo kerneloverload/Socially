@@ -15,7 +15,7 @@
         @include flex-center($column);
         flex-direction: $column;
         height: 20vh;
-        width: 109vh;
+        width: auto;
         margin-top: 5px;
         margin-left: 55px;
         //  background-color: aqua;
@@ -79,10 +79,6 @@
                         margin-top: 5px;
                         font-size: 40px;
                         color: #000;
-                        &:hover{
-                            transition: all 0.4s;
-                            color: blueviolet;
-                        }
                     }
                 }
                 
@@ -132,7 +128,7 @@
                     flex-direction: $column;
                     // border: 1px solid black;
                     height: auto;
-                    width: auto;
+                    width: 52.5vw;
                     background: linear-gradient(20deg, lightgrey, rgb(135,201,240));
                     .comment-user-details{
                         display: flex;
@@ -141,7 +137,7 @@
                             position: absolute;
                             height: 30px;
                             width: 30px;
-                            margin-left: 49.5vw;
+                            margin-left: 51vw;
                             margin-top: 5px;
                             &:hover{
                                 i{
@@ -158,6 +154,7 @@
                         .comment-avatar{
                             height: 70px;
                             width: 70px;
+                            position: absolute;
                             img{
                                 border-radius: 50%;
                                 height: 100%;
@@ -173,6 +170,7 @@
                                 // border: 1px solid black;
                                 height: 25px;
                                 width: auto;
+                                margin-left: 69px;
                                 p
                                 {   
                                     margin-top: 1px;
@@ -183,7 +181,8 @@
                             .comment-post{
                                 height: auto;
                                 width: auto;
-                                margin-left: 5px;
+                                margin-left: 66px;
+                                margin-top: 10px;
                                 // border: 1px solid black;
                                 p
                                 {   
@@ -194,7 +193,7 @@
                             }
                             .comment-options{
                                 // border: 1px solid black;
-                                margin-left: 35vw;
+                                margin-left: 43vw;
                                 i{
                                     font-size: 30px;
                                 }
@@ -206,10 +205,10 @@
                 }
                 .comment{
                     margin-top: 370px;
-                    margin-left: 40px;
+                    margin-left: 32px;
                     margin-bottom: 50px;
                     height:auto;
-                    width: 100vh;
+                    width: 52vw;
                     // box-shadow: 10px 10px 10px 10px slategray;
                     // border: 1px solid black;
                     // 
@@ -261,9 +260,7 @@
                                 i{
                                     font-size: 30px;
                                     margin: 10px 10px 10px 5px;
-                                    &:hover{
-                                        color: blueviolet;
-                                    }
+                                   
                                 }
                             }
                             .comment-btn{
@@ -283,10 +280,7 @@
                                         margin-top: 5px;
                                         font-size: 40px;
                                         color: #000;
-                                        &:hover{
-                                            transition: all 0.4s;
-                                            color: blueviolet;
-                                        }
+                                       
                                     }
                                 }
                                 
@@ -357,7 +351,7 @@
                     .posts{
                         // border: 1px solid black;
                         position:absolute;
-                        height: 250px;
+                        height: auto;
                         width: 36%;
                         margin-top: 50px;
                         margin-left: 345px;

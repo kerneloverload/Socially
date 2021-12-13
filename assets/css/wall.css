@@ -107,7 +107,7 @@ body {
   justify-content: center;
   flex-direction: column;
   height: 20vh;
-  width: 109vh;
+  width: auto;
   margin-top: 5px;
   margin-left: 55px;
 }
@@ -170,10 +170,6 @@ body {
   font-size: 40px;
   color: #000;
 }
-.main-wall .new-post-container .post-custom .post-btn button span:hover {
-  transition: all 0.4s;
-  color: blueviolet;
-}
 .main-wall .float {
   position: fixed;
   right: 50;
@@ -212,7 +208,7 @@ body {
   display: flex;
   flex-direction: column;
   height: auto;
-  width: auto;
+  width: 52.5vw;
   background: linear-gradient(20deg, lightgrey, #87c9f0);
   margin-top: 100px;
 }
@@ -224,7 +220,7 @@ body {
   position: absolute;
   height: 30px;
   width: 30px;
-  margin-left: 49.5vw;
+  margin-left: 51vw;
   margin-top: 5px;
 }
 .main-wall .main-post-container .posts-main .comment-details .comment-user-details .delete-comment:hover i {
@@ -239,6 +235,7 @@ body {
 .main-wall .main-post-container .posts-main .comment-details .comment-user-details .comment-avatar {
   height: 70px;
   width: 70px;
+  position: absolute;
 }
 .main-wall .main-post-container .posts-main .comment-details .comment-user-details .comment-avatar img {
   border-radius: 50%;
@@ -254,6 +251,7 @@ body {
 .main-wall .main-post-container .posts-main .comment-details .comment-user-details .comment-details-container .comment-name {
   height: 25px;
   width: auto;
+  margin-left: 69px;
 }
 .main-wall .main-post-container .posts-main .comment-details .comment-user-details .comment-details-container .comment-name p {
   margin-top: 1px;
@@ -263,7 +261,8 @@ body {
 .main-wall .main-post-container .posts-main .comment-details .comment-user-details .comment-details-container .comment-post {
   height: auto;
   width: auto;
-  margin-left: 5px;
+  margin-left: 66px;
+  margin-top: 10px;
 }
 .main-wall .main-post-container .posts-main .comment-details .comment-user-details .comment-details-container .comment-post p {
   margin-top: 0px;
@@ -271,17 +270,17 @@ body {
   font-weight: 500;
 }
 .main-wall .main-post-container .posts-main .comment-details .comment-user-details .comment-details-container .comment-options {
-  margin-left: 35vw;
+  margin-left: 43vw;
 }
 .main-wall .main-post-container .posts-main .comment-details .comment-user-details .comment-details-container .comment-options i {
   font-size: 30px;
 }
 .main-wall .main-post-container .posts-main .comment {
   margin-top: 370px;
-  margin-left: 40px;
+  margin-left: 32px;
   margin-bottom: 50px;
   height: auto;
-  width: 100vh;
+  width: 52vw;
 }
 .main-wall .main-post-container .posts-main .comment .comment-container {
   display: flex;
@@ -332,9 +331,6 @@ body {
   font-size: 30px;
   margin: 10px 10px 10px 5px;
 }
-.main-wall .main-post-container .posts-main .comment .comment-container .comment-custom .comment-icons i:hover {
-  color: blueviolet;
-}
 .main-wall .main-post-container .posts-main .comment .comment-container .comment-custom .comment-btn {
   margin-left: 40%;
   width: 10%;
@@ -351,10 +347,6 @@ body {
   margin-top: 5px;
   font-size: 40px;
   color: #000;
-}
-.main-wall .main-post-container .posts-main .comment .comment-container .comment-custom .comment-btn button span:hover {
-  transition: all 0.4s;
-  color: blueviolet;
 }
 .main-wall .main-post-container .posts-main .posts-container {
   box-shadow: 10px 10px 10px 10px slategray;
@@ -410,7 +402,7 @@ body {
 }
 .main-wall .main-post-container .posts-main .posts-container .posts {
   position: absolute;
-  height: 250px;
+  height: auto;
   width: 36%;
   margin-top: 50px;
   margin-left: 345px;
